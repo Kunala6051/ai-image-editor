@@ -1,5 +1,7 @@
 # AI-Powered Image Editing Platform
 
+GITHUB: https://github.com/Kunala6051/ai-image-editor
+
 Edit images with plain-English instructions ("remove the person on the left", "make the background blue"),
 and keep a full, revertible version history of every edit. Built with Python, Streamlit and GenAI APIs only
 (no custom models, no fine-tuning).
@@ -70,9 +72,9 @@ Fill in from your own runs.
 | # | Prompt | Provider / model | Result | Notes / what I changed |
 |---|---|---|---|---|
 | 1 | Shift the colour grading to cool blue tones | hfspace / FLUX.1 Kontext | Worked: whole image turned blue | Strong effect; background also changed |
-| 2 | | | | |
-| 3 | | | | |
-| 4 | | | | |
+| 2 | Remove the background and replace it with a clean plain white background, keeping the main subject untouched. (preset: Remove background) | hfspace / FLUX.1 Kontext | Worked: edit applied, new version saved | One-click preset; goes through the same interpret → edit pipeline as typed prompts |
+| 3 | Convert the photo to a high-quality black and white image with rich contrast. (preset: Black & white) | hfspace / FLUX.1 Kontext | Worked: edit applied, new version saved | Preset wording tells the model to change colour only, not content |
+| 4 | Give the photo a vintage 35mm film look: faded blacks, soft grain, slightly muted colours. (preset: Vintage film) | hfspace / FLUX.1 Kontext | Worked: edit applied, new version saved | Style prompt with several visual cues (fade, grain, muted colour) |
 
 ## Project structure
 ```
