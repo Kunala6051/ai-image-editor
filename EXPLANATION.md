@@ -6,7 +6,7 @@ A chat/vision model is the opposite. The app uses each for what it does best:
 
 | Job | Model type | Used for |
 |---|---|---|
-| Interpret the request, caption images | Vision LLM (Gemini 2.5 Flash text model, free tier) | Turn "get rid of him" into a precise spec; write search captions later |
+| Interpret the request, caption images | Vision LLM (Gemini 3.8 Flash text model, free tier) | Turn "get rid of him" into a precise spec; write search captions later |
 | Produce the edited image | Image-editing model (FLUX.1 Kontext via a Hugging Face Space) | Apply exactly one edit to the photo |
 
 All providers implement the same three methods (`interpret`, `caption`, `generate`), so switching is a

@@ -87,8 +87,8 @@ class GeminiEditor(BaseEditor):
         if not key:
             raise EditError("GEMINI_API_KEY is not set.")
         self.client = genai.Client(api_key=key)
-        self.image_model = os.getenv("GEMINI_IMAGE_MODEL", "gemini-2.5-flash-image")
-        self.text_model = os.getenv("GEMINI_TEXT_MODEL", "gemini-2.5-flash")
+        self.image_model = os.getenv("GEMINI_IMAGE_MODEL", "gemini-3.8-flash-image")
+        self.text_model = os.getenv("GEMINI_TEXT_MODEL", "gemini-3.8-flash")
 
     def interpret(self, img, request):
         from google.genai import types
